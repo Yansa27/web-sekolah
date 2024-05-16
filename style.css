@@ -1,4 +1,7 @@
-
+*{
+	margin: 0;
+	padding: 0;
+}
 /* font */
 @font-face {
     font-family: poppins;
@@ -11,6 +14,11 @@ nav{
     font-family: poppins;
 }
 
+.navbar-nav a{
+	color: rgb(115, 188, 234);
+	
+}
+
 .nav-link {
 	font-size: 18px;
 	margin-left: 5px;
@@ -18,9 +26,18 @@ nav{
 }
 /* end of navbar */
 
+/* color */
+.orange{
+	background-color: rgb(246, 222, 127);
+}
+
+.blue{
+	background-color: rgb(115, 188, 234);
+}
+
 /* content */
 
-/* Hero */
+	/* Hero */
 #hero{
 	background-image: url(asset/image/hero.jpg);
 	background-repeat: no-repeat;
@@ -39,7 +56,7 @@ nav{
 .hero-title h1{
 	position: absolute;
 	width: 90vw;
-    top: 100%;
+    top: 130%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -60,6 +77,6 @@ nav{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
-/* End Hero */
+	/* End Hero */
 
 /* end of content */
