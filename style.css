@@ -56,8 +56,38 @@ table {
 nav{
     font-family: poppins;
 }
+
+.nav-link {
+	font-size: 18px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
 /* end of navbar */
 
 /* content */
+
+/* Hero */
+#hero{
+	background-image: url(asset/image/hero.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	width: 100%;
+	position: relative;
+}
+
+.hero-title{
+	padding-top: 250px;
+	color: rgb(0, 0, 0);
+	/* text bold */
+
+}
+
+.hero-text{
+	font-size: 75px;
+	font-weight: 600px;
+}
+/* End Hero */
 
 /* end of content */
