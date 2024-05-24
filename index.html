@@ -10,17 +10,17 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark pt-3 ps-3">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark pt-3 ps-3 navbar-custom navbar-default">
         <div class="container-fluid ">    
               <a href="index.html">
-                <img src="asset/image/logo.png" alt="logo" width="80px" height="80px">
+                <img class="navbar-img-custom img-nav-default" src="asset/image/logo.png" alt="logo">
               </a>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-link  " aria-current="page" href="#">Home</a>
-                  <a class="nav-link  " href="#">Tentang</a>
-                  <a class="nav-link  " href="#">Jurusan</a>
-                  <a class="nav-link  " href="#">Kontak</a>
+                  <a class="nav-link nav-link-default" aria-current="page" href="#">Home</a>
+                  <a class="nav-link nav-link-default" href="#">Tentang</a>
+                  <a class="nav-link nav-link-default" href="#">Jurusan</a>
+                  <a class="nav-link nav-link-default" href="#">Kontak</a>
                 </div>
               </div>  
               <div class="d-fles ms-auto me-2">
@@ -39,9 +39,9 @@
     <main>
       <!-- Landing page -->
       <section id="hero" class="px-0">
-        <div class="container-fluid hero position-relative text-center">
+        <div class="container-fluid  hero position-relative text-center">
           <div class="hero-title">
-            <h1 class="hero-text text-white   ">
+            <h1 class="hero-text text-white">
               SELAMAT DATANG DI <span class="text-warning">SMAN1 BANDAR LAMPUNG</span> 
               
             </h1>
@@ -54,22 +54,22 @@
       <!-- end of landing page -->
 
       <!-- About -->
-      <section id="about  ">
-        <div class="container-fluid min-vh-100 bg-light d-flex justify-content-center align-items-center">
-          <div class="row">
-            <div class="col-md-4 p-5">
-              <h1 class="display-5 fw-bold ">Kata Sambutan Kepala Sekolah</h1>
-              <p>Ibu Kartini S.PD A.mm</p>
-            </div>
-            <div class="col-md-4 p-4  d-flex justify-content-center align-items-center"><img
-              src="asset/image/kepala-sekolah.jpg" class="img-fluid rounded" alt="kepala-sekolah" width="250px" height="250px"/>
-            </div>
-            <div class="col-md-3 text-center p-5">
-              <p>Selamat datang di website resmi SMA Negeri 1 Bandar Lampung! Di sini, Anda akan menemukan informasi penting mengenai kurikulum, kegiatan, dan komunikasi sekolah. Mari bersama-sama menciptakan masa depan gemilang bagi generasi penerus bangsa melalui pendidikan yang bermutu dan berintegritas tinggi.</p>
+        <section id="about" style="overflow: hidden;">
+          <div class="container-fluid min-vh-100 bg-light d-flex justify-content-center align-items-center">
+            <div class="row">
+              <div class="col-md-4 p-5 animasi-muncul-kiri sebelum-kiri">
+                <h1 class="display-5 fw-bold">Kata Sambutan Kepala Sekolah</h1>
+                <p>Ibu Kartini S.PD A.mm</p>
+              </div>
+              <div class="col-md-4 p-4  d-flex justify-content-center align-items-center"><img
+                src="asset/image/kepala-sekolah.jpg" class="img-fluid rounded" alt="kepala-sekolah" width="250px" height="250px"/>
+              </div>
+              <div class="col-md-3 text-center animasi-muncul-kanan p-5 sebelum-kanan">
+                <p>Selamat datang di website resmi SMA Negeri 1 Bandar Lampung! Di sini, Anda akan menemukan informasi penting mengenai kurikulum, kegiatan, dan komunikasi sekolah. Mari bersama-sama menciptakan masa depan gemilang bagi generasi penerus bangsa melalui pendidikan yang bermutu dan berintegritas tinggi.</p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
       <!-- Keunggulan -->
       <section id="about-2 ">
@@ -241,7 +241,7 @@
       </footer>
     </footer>
     <!-- end of footer -->
-
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -14,7 +14,7 @@ nav{
     font-family: poppins;
 }
 
-.navbar-nav a{
+.navbar a{
 	color: rgb(115, 188, 234);
 	
 }
@@ -24,8 +24,33 @@ nav{
 	margin-left: 5px;
 	margin-right: 5px;
 }
+.navbar-custom {
+    transition: background-color 0.5s 	;
+}
+.navbar-img-custom {
+    transition: background-color 0.5s ease;
+}
+
+/* js before scroll */
+.navbar-default {
+    background-color: transparent;
+}
+.img-nav-default{
+	height: 80px;
+	width: 80px;
+}
+
+/* js after scroll */
+.img-nav-scrolled{
+	height: 50px;
+	width: 50px;
+}
+.navbar-scrolled {
+    background-color: rgb(48, 52, 54);
+}
+
 .navbar-dark .navbar-nav .nav-link:hover {
-	color: black;
+	color: white;
   }
 /* end of navbar */
 
@@ -80,6 +105,43 @@ nav{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
-	/* End Hero */
+/* animasi hero */
+.animasi-hero {
+    opacity: 0;
+    animation: animasiHero 3s forwards; /* 2s adalah durasi animasi, bisa disesuaikan */
+}
+
+@keyframes animasiHero {
+    to {
+        opacity: 1;
+    }
+}
+
+/* End Hero */
+
+/* About */
+/* about animasi */
+.animasi-muncul-kiri{
+	transition: 1s ;
+}
+.animasi-muncul-kanan{
+	transition: 1s ;
+}
+.sebelum-kiri{
+	translate:-100% 0% ;
+	opacity: 0;
+}
+.sesudah-kiri{
+	translate:0% 0% ;
+	opacity: 1;
+}
+.sebelum-kanan{
+	translate:100% 0% ;
+	opacity: 0;
+}
+.sesudah-kanan{
+	translate:0% 0% ;
+	opacity: 1;
+}
 
 /* end of content */
